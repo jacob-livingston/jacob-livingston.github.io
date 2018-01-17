@@ -41,11 +41,20 @@ body, html {
 .content-section {
     display: block;
 }
+.block-container {
+    position: relative;
+}
+.block-overlap {
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+}
 .content-layover {
-    background: #ededed;
+    /* background: #ededed;
     display: inline-flex;
     position: absolute;
-    top: 10%;
+    top: 10%; */
 }
 .content-aside {
     display: inline-flex;
@@ -58,14 +67,14 @@ body, html {
         Header goes here
     </header>
     <div class="container-fluid content-template">
-        <section class="hero-section hero-image">
+        <section class="hero-section hero-image block-container">
             <div class="hero-text">
                 <h1>How to Survive Camping<br>in Global Warming</h1>
                 <p class="hero-byline">Written by<span> Author</span></p>
             </div>
         </section>
         <section class="content-section">
-            <div class="content-layover">
+            <div class="content-layover block-overlap">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <aside class="content-aside">
