@@ -56,129 +56,100 @@ body, html {
 .content-aside {
     display: inline-flex;
     float: right;
-    .social-icons {
-        text-align: left;
-        font-weight: 300;
-        font-size: 1.5em;
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            li {
-                display: inline-block;
-                margin: 20px auto;
-                vertical-align:  middle;
-                zoom: 1;
-                &.social-li [data-icon] {
-                    display: inline;
-                    padding: 4px 0 4px 30px;
-                    position: relative;
-                    &::before {
-                        color: #ffffff;
-                        font-size: 35px;
-                        position: absolute;
-                        z-index: 5;
-                    }
-                    &::after {
-                        background-color: inherit;
-                        border-radius: 50%;
-                        content: '';
-                        height: 40px;
-                        left: -10px;
-                        position: absolute;
-                        top: 2px;
-                        width: 40px;
-                        z-index: 1;
-                    }
-                    &:hover:before, &:hover:after {
-                        opacity: .75;
-                    }
-                }
-                &.social-li [data-icon="6"] {
-                    &::before {
-                    left: -3px;
-                    top: 8px;
-                    }
-                    &::after {
-                        background-color: #cd2431;
-                    }
-                }
-                &.social-li [data-icon="7"] {
-                    &::before {
-                        left: -10px;
-                        top: 2px;
-                    }
-                    &::after {
-                        background-color: #3d5c9e;
-                        top: 2px;
-                    }
-                }
-                &.social-li [data-icon="8"] {
-                    &::before {
-                        font-size: 25px;
-                        left: -3px;
-                        top: 10px;
-                    }
-                    &::after {
-                        background-color: #266082;
-                    }
-                }
-                &.social-li [data-icon="9"] {
-                    &::before {
-                        font-size: 25px;
-                        left: -3px;
-                        top: 11px;
-                    }
-                    &::after {
-                        background-color: #49aad1;
-                    }
-                }
-                &.social-li {
-                    #youtube {
-                        span {
-                            background-image: url('/assets/img/Youtube-icon.png');
-                            background-repeat: no-repeat;
-                            background-position: 0px 0px;
-                            background-size: contain;
-                            display: inline-block;
-                            height: 40px;
-                            left: -10px;
-                            position: relative;
-                            top: 0;
-                            width: 40px;
-                        }
-                    }
-                }
-                a {
-                    color: #000000;
-                    display: block;
-                    font-size: 1.4em;
-                    margin: 0 5px;
-                    text-decoration: none;
-                    i {
-                        color: rgba(68, 138, 175, 1);
-                        transition: (all, 0.2s, ease-in);
-                    }
-                    &:hover {
-                        opacity: .75;
-                        i {
-                            color: darken(rgba(68, 138, 175, 1), 20%);
-                        }
-                    }
-                    &:focus, &:active {
-                        i {
-                            transition: none;
-                            color: darken(rgba(68, 138, 175, 1), 40%);
-                        }
-                    }
-                }
-            }
-        }
-        &.col-one {
-            display: inline-block;
-            width: 48%;
-        }
-    }
+}
+.social-icons {
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.social-icons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.social-icons ul li {
+    display: inline-block;
+    margin: 20px auto;
+    vertical-align:  middle;
+    zoom: 1;
+}
+.social-icons .social-li [data-icon] {
+    display: inline;
+    padding: 4px 0 4px 30px;
+    position: relative;
+}
+.social-icons .social-li [data-icon]:before {
+    color: #ffffff;
+    font-size: 35px;
+    position: absolute;
+    z-index: 5;
+}
+.social-icons .social-li [data-icon]:after {
+    background-color: inherit;
+    border-radius: 50%;
+    content: '';
+    height: 40px;
+    left: -10px;
+    position: absolute;
+    top: 2px;
+    width: 40px;
+    z-index: 1;
+}
+.social-icons .social-li [data-icon]:hover:before, &.social-icons .social-li [data-icon]:hover:after {
+    opacity: .75;
+}
+.social-icons .social-li [data-icon="6"] {
+&::before {
+left: -3px;
+top: 8px;
+}
+.social-icons .social-li [data-icon="6"]:after {
+    background-color: #cd2431;
+}
+.social-icons .social-li [data-icon="7"]:before {
+    left: -10px;
+    top: 2px;
+}
+.social-icons .social-li [data-icon="7"]:after {
+    background-color: #3d5c9e;
+    top: 2px;
+}
+.social-icons .social-li [data-icon="8"]:before {
+    font-size: 25px;
+    left: -3px;
+    top: 10px;
+}
+.social-icons .social-li [data-icon="8"]:after {
+    background-color: #266082;
+}
+.social-icons .social-li [data-icon="9"]:before {
+    font-size: 25px;
+    left: -3px;
+    top: 11px;
+}
+.social-icons .social-li [data-icon="9"]:after {
+    background-color: #49aad1;
+}
+.social-icons .social-li a {
+color: #000000;
+display: block;
+font-size: 1.4em;
+margin: 0 5px;
+text-decoration: none;
+}
+.social-icons .social-li a i {
+    color: rgba(68, 138, 175, 1);
+    transition: (all, 0.2s, ease-in);
+}
+.social-icons .social-li a:hover {
+    opacity: .75;
+}
+.social-icons .social-li a i {
+    color: darken(rgba(68, 138, 175, 1), 20%);
+}
+.social-icons .social-li a:focus i, .social-icons .social-li a:active i {
+    transition: none;
+    color: darken(rgba(68, 138, 175, 1), 40%);
 }
 </style>
 </head>
